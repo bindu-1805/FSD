@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title>Grow and Shrink Text</title>
+
+    <style>
+        body{
+            background-color: #c39c3278;
+            height:100vh;
+        }
+        .display{
+            margin-top:300px;
+        }
+    </style>               
+
+    <script>
+
+        var font = 0, load;
+        function begin()
+        {
+        load = window.setInterval("increment()", 100);
+        }
+       
+        function increment() {
+        font = font + 1;
+        display.innerHTML = "text-growing : " + font + "pt";
+        display.style.fontSize = font + "pt";
+        if (font > 50) {
+        window.clearTimeout(load);
+        load = window.setInterval("decrement()", 100);
+        }
+        display.style.color = "red";
+        }
+        function decrement() {
+        font = font - 1;
+        display.innerHTML = "text-shrinking: " + font + "pt";
+        display.style.fontSize = font + "pt";
+        if (font == 5) {
+        window.clearTimeout(load);
+        load = window.setInterval("increment()", 100);
+        }
+        display.style.color = "blue";
+        }
+    </script>
+
+  </head>
+
+  <body  onload="begin()" >
+    <center>
+    <p  class ="display" id="display"></p>
+    </center>
+    </body>
+ </html>

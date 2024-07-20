@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Table</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      text-align: center;
+      padding: 5px;
+      font-size: 14px;
+    }
+    td:hover {
+        font-size: 15px;   
+    }
+    th {
+      background-color: #f0f0f0;
+      color: red;
+    }
+    .popup{
+            display: none;
+            background-color: #f0f0f0;
+            position: absolute;
+            border: 1px solid #000;
+            padding: 10px;
+    }
+    .skill-lab:hover .popup{
+      display: block;
+    }
+    .placement-activity:hover .popup{
+      display: block; 
+    }
+    </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>DAY/TIME</th>
+      <th>8:30 - 9:30</th>
+      <th>9:30 - 10:30</th>
+      <th>10:30 - 11:00</th>
+      <th>11:00 - 12:00</th>
+      <th>12:00 - 1:00</th>
+      <th>1:00 - 2:00</th>
+      <th>2:00 - 3:00</th>
+      <th>3:00 - 4:00</th>
+    </tr>
+    <tr>
+      <td>Day 1</td>
+      <td>21CSE63</td>
+      <td>21CSE62</td>
+      <th rowspan="6" style="background-color: #90EE90;">SHORT BREAK</th>
+      <td>21CSE61</td>
+      <td style="background-color: #FFA500;">Tutorial</td>
+      <th rowspan="6" style="background-color: #90EE90;">LUNCH BREAK</th>
+      <td colspan="2" style="background-color: #FFA07A;">MOOCs</td>
+    </tr>
+    <tr>
+      <td>Day 2</td>
+      <td colspan="2" style="background-color: #FFFFE0;">21CSE65X (Open Elective)</td>
+      <td colspan="2" style="background-color: lightskyblue;">B1-21CSEL69<br>B2-21CSE63</td>
+      <td>21CIV67</td>
+      <td>Mentoring Session</td>
+    </tr>
+    <tr>
+      <td>Day 3</td>
+      <td>21CSE61</td>
+      <td style="background-color: lightpink;">21CSE642/<br>21CSE644</td>
+      <td>21CSE662</td>
+      <td>21CSE62</td>
+      <td colspan="2" style="background-color: grey;"></td>
+    </tr>
+    <tr>
+      <td>Day 4</td>
+      <td colspan="2" style="background-color: lightskyblue;">B2-21CSEL69<br>B1-21CSE63</td>
+      <td>21CSE61</td>
+      <td>21CSE63</td>
+      <td style="background-color: #FFA07A" colspan="2" class="skill-lab"><a href="#">Skill Lab</a><div class="popup">“skills labs”, an abbreviation of skills laboratories, refers to specifically equipped practice rooms functioning as training facilities offering skill-based training for the practice of clinical skills prior to their real life application. </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Day 5</td>
+      <td colspan="2" class="elective">21CSE65X (Open Elective)</td>
+      <td colspan="2">21MPT68</td>
+      <td colspan="2" rowspan="2" style="background-color: #FFA07A" class="placement-activity"><a href="#">Placement activity</a><div class="popup">The educational institutes work towards building a robust program that will help the final year students groom themselves, both professionally and personally to approach organizations that are hiring and also to the recruiters that are the face of lot many industrial conglomerates.</div></td>
+    </tr>
+    <tr>
+      <td>Day 6</td>
+      <td>21CSE62</td>
+      <td>21CSE63</td>
+      <td colspan="2" style="background-color: lightpink;">21CSE642/21CSE644</td>
+    </tr>
+  
+  </table>
+
+  </body>
+</html>
