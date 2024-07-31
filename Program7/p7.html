@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-color: rgb(39, 6, 13);
+        }
+
+        #about{
+            color: #f8f9fa;
+        }
+        .proj{
+            color: #f8f9fa;
+        }
+        .hero-section {
+            background: #f8f9fa;
+            padding: 50px 0;
+        }
+        .skill-card {
+            margin-bottom: 20px;
+        }
+        .project-card img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4">Bindu Madhavi V</h1>
+            <p class="lead">I'm a CSE undergrad at Global Academy of Technology, Bangalore</p>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="text-center py-5">
+        <div class="container">
+            <h2>About Me</h2>
+            <p class="lead">I'm currently a pre-final year student interested in Full stack development and Machine learning.
+                I've done good projects pertained to both domains. I'm also fascinated about Quantum Computing.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card skill-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Full stack development</h5>
+                            <p class="card-text">React, Redux and Tailwind together is my go-to Tech Stack.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card skill-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Machine Learning</h5>
+                            <p class="card-text">I have a strong foundation in ML algorithms and the math behind them.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card skill-card">
+                        <div class="card-body">
+                            <h5 class="card-title">C/C++ and Python</h5>
+                            <p class="card-text">My choice of programming languages are C/C++ and Python as it's easy to understand the logic.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="proj text-center">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="/images/Rainfall.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Rainfall Prediction for Next Harvest Year</h5>
+                            <ul class="card-text"></ul>
+                            <li> 
+                                ML techniques like Random Forest, Ridge Regressor and K Neighbors Regressor were used.
+                                
+                            </li>
+                            <li>
+                                 Results were interpreted using matplotlib.
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="/images/GistIt.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">GistIt: An AI Text Summarizer</h5>
+                            <ul class="card-text"></ul>
+                            <li> This application allows users to enter or paste their long texts and get a summary in return.
+                            </li>
+                            <li>
+                                Facebook’s BART LARGE CNN model was used to summarize text.
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="/images/PCOS.jpeg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">PCOS Prediction</h5>
+                            <ul class="card-text"></ul>
+                            <li> Decision tree with criterion Gini index outperformed with 88.07% accuracy among single classifiers
+                                while Gradient Boost stood out with an accuracy of 91.74% among bagging and boosting algorithms.
+                            </li>
+                            <li>
+                                The Ensemble classifier ensemble model involving bagging, boosting and single classifiers brought
+                                95.41% accuracy.
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-light">
+        <p>&copy; 2024 Bindu Madhavi. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
